@@ -25,7 +25,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        diceImage1.image = UIImage(named: "dice6")
+        diceImage2.image = UIImage(named: "dice6")
+
         
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(scrollDice))
         view.addGestureRecognizer(gestureRecognizer)
@@ -36,8 +38,9 @@ class ViewController: UIViewController {
 
         diceImage1.image = diceArray [Int.random(in: 0...5)]
         diceImage2.image = diceArray [Int.random(in: 0...5)]
-
         
+    
+
     }
 
 }
