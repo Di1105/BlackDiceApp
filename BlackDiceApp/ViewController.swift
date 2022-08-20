@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var diceImage1: UIImageView!
-    
+    @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var diceImage2: UIImageView!
     
     var dice1 = UIImage(imageLiteralResourceName: "dice1")
@@ -36,9 +36,14 @@ class ViewController: UIViewController {
     @objc func scrollDice() {
         let diceArray = [dice1,dice2,dice3,dice4,dice5,dice6,]
 
-        diceImage1.image = diceArray [Int.random(in: 0...5)]
-        diceImage2.image = diceArray [Int.random(in: 0...5)]
+        let randomInt1 = Int.random(in: 0...5)
+        let randomInt2 = Int.random(in: 0...5)
+        diceImage1.image = diceArray [randomInt1]
+        diceImage2.image = diceArray [randomInt2]
         
+        let numDice1 = randomInt1+1
+        let numDice2 = randomInt2+1        
+        totalLabel.text = "Total: \(numDice1+numDice2)"
     
 
     }

@@ -59,6 +59,7 @@
                     <connections>
                         <outlet property="diceImage1" destination="UTj-jH-r1c" id="jq5-up-Uja"/>
                         <outlet property="diceImage2" destination="NYE-1y-rFt" id="aIS-PP-aBq"/>
+                        <outlet property="totalLabel" destination="BBb-1C-f6y" id="UXH-Qs-YTp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
