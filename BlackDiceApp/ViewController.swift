@@ -13,20 +13,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var diceImage2: UIImageView!
     
-    var dice1 = UIImage(imageLiteralResourceName: "dice1")
-    var dice2 = UIImage(imageLiteralResourceName: "dice2")
-    var dice3 = UIImage(imageLiteralResourceName: "dice2")
-    var dice4 = UIImage(imageLiteralResourceName: "dice4")
-    var dice5 = UIImage(imageLiteralResourceName: "dice5")
-    var dice6 = UIImage(imageLiteralResourceName: "dice6")
+    let dice1 = UIImage(imageLiteralResourceName: "dice-one")
+    let dice2 = UIImage(imageLiteralResourceName: "dice-two")
+    let dice3 = UIImage(imageLiteralResourceName: "dice-three")
+    let dice4 = UIImage(imageLiteralResourceName: "dice-four")
+    let dice5 = UIImage(imageLiteralResourceName: "dice-five")
+    let dice6 = UIImage(imageLiteralResourceName: "dice-six")
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        diceImage1.image = UIImage(named: "dice6")
-        diceImage2.image = UIImage(named: "dice6")
+        diceImage1.image = dice1
+        diceImage2.image = dice1
+        diceImage1.tintColor = .label
+        diceImage2.tintColor = .label
 
         
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(scrollDice))
@@ -34,7 +36,7 @@ class ViewController: UIViewController {
     }
     
     @objc func scrollDice() {
-        let diceArray = [dice1,dice2,dice3,dice4,dice5,dice6,]
+        let diceArray = [dice1,dice2,dice3,dice4,dice5,dice6]
 
         let randomInt1 = Int.random(in: 0...5)
         let randomInt2 = Int.random(in: 0...5)
