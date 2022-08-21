@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             .transitionFlipFromBottom
         ]
         
-        let animationDuration = 0.15
+        let animationDuration = 0.25
 
         let randomInt1 = Int.random(in: 0...5)
         let randomInt2 = Int.random(in: 0...5)

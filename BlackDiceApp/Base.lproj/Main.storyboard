@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap or Shake" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px7-9f-cAR">
-                                <rect key="frame" x="150" y="717" width="114" height="24"/>
+                                <rect key="frame" x="150" y="738" width="114" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,9 +47,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NYE-1y-rFt" firstAttribute="top" secondItem="UTj-jH-r1c" secondAttribute="bottom" constant="50" id="8vZ-HZ-KJ0"/>
-                            <constraint firstItem="px7-9f-cAR" firstAttribute="top" secondItem="NYE-1y-rFt" secondAttribute="bottom" constant="150" id="KKF-qd-bxt"/>
+                            <constraint firstItem="px7-9f-cAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ihq-1K-Vrv"/>
                             <constraint firstItem="UTj-jH-r1c" firstAttribute="top" secondItem="BBb-1C-f6y" secondAttribute="bottom" constant="100" id="SCG-aM-fjP"/>
-                            <constraint firstItem="px7-9f-cAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mZ1-OD-0xO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="px7-9f-cAR" secondAttribute="bottom" constant="100" id="nUx-PF-Dqy"/>
                             <constraint firstItem="UTj-jH-r1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q89-HV-0fe"/>
                             <constraint firstItem="NYE-1y-rFt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rd6-jO-2Ms"/>
                             <constraint firstItem="BBb-1C-f6y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ssA-9e-ewa"/>
