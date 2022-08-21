@@ -72,7 +72,7 @@ class ViewController: UIViewController {
 
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?){
         if motion == .motionShake {
-            scrollDice()
+            rollDice()
         }
     }
 }
