@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(scrollDice))
         view.addGestureRecognizer(gestureRecognizer)
+        
     }
     
     @objc func scrollDice() {
@@ -48,6 +49,16 @@ class ViewController: UIViewController {
         totalLabel.text = "Total: \(numDice1+numDice2)"
     
 
+    }
+    
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?){
+        if motion == .motionShake {
+            scrollDice()
+        }
     }
 
 }
