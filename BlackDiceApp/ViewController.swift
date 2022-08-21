@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(rollDice))
         view.addGestureRecognizer(gestureRecognizer)
+        
     }
     
     @objc func rollDice() {
@@ -63,6 +64,16 @@ class ViewController: UIViewController {
         let numDice1 = randomInt1+1
         let numDice2 = randomInt2+1        
         totalLabel.text = "Total: \(numDice1+numDice2)"
+    }
+    
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?){
+        if motion == .motionShake {
+            scrollDice()
+        }
     }
 }
 
